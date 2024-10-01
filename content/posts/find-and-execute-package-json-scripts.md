@@ -1,5 +1,5 @@
 ---
-title: 'Find and execute package.json scripts the easy way'
+title: 'Find and Execute Package.json Scripts the Easy Way'
 date: 2024-10-02T21:07:37+10:00
 draft: false
 asciinema: true
@@ -10,15 +10,11 @@ tags:
 category: scripts
 ---
 
-# How to quickly find and execute scripts in a large package.json
+# How to Quickly Find and Execute Scripts in a Large package.json
 
-Sometimes, package.json's scripts section gets very long.
+Sometimes, package.json's scripts section gets very long - especially in a monorepo.
 
-Very, very long.
-
-Especially if you work in a monorepo.
-
-Once again, `fzf` + `jq` makes a great combo to quickly find and execute package.json's scripts.
+Fortunately, `fzf` + `jq` makes a great combo to quickly find and execute package.json's scripts.
 
 {{< asciinema key="psc" >}}
 
@@ -39,28 +35,30 @@ jq -r '.scripts | keys[]' package.json | fzf \
 
 ## Step by step explanation
 
-1. Retrieve the script names:
+1. Retrieve the Script Names:
 
-Using `jq`, we retrieving all the `keys` of the `scripts`.
+Using `jq`, we extract all the `keys` of the `scripts`.
 
-The quotes are stripped with the raw flag `-r`
+The `-r` flag ensure quotes are stripped from the result.
 
 `jq -r '.scripts | keys[] package.json` 
 
-_Note: we assume that the script is execute in directory containing the `package.json` file._
+_Note: we assume that the script is executed in the directory containing the `package.json` file._
 
-1. Pipe the result to `fzf`:
+1. Pipe the Result to `fzf`:
 
-Then we simply pipe the result to `fzf`.
+Next, we simply pipe the result to `fzf`.
 
-To enhance the UX, we add a header to the search.
+We add a header to enhance the UX.
 
-1. Optional) Save the command to a scripts:
+1. (Optional) Save the Command as a Script:
 
-In my case, I saved it as `psc`.
+You can save the command as a script (e.g., `psc`). 
 
-This allows me to `cd` into a repository directory and type `psc`
+This way, you can `cd` into a repository directory and simply type `psc` to execute the script finder.
 
 
 Enjoy,
 Aloys.
+
+
