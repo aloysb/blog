@@ -1,0 +1,39 @@
+baseURL: https://aloysb.xyz
+languageCode: en-us
+title: Aloys B.
+theme: ["PaperMod"]
+outputs:
+  home:
+  - html
+  - rss
+params:
+  description: "Yet another developer's blog"
+  author: Aloys
+  DateFormat: "2 January 2006"
+
+  homeInfoParams:
+    Title: Aloys B.
+    Content: |
+      A full-ish stack developer in the Brisbane Greater Region (Australia).
+
+      Currently working as a Senior UX Engineer at Shorthand.
+
+      Avid of mountain sports, getting nerdier every day.
+
+  socialIcons: # optional
+    - name: "github"
+      url: "https://github.com/aloysb"
+    - name: "rss"
+      url: "https://aloysb.xyz/index.xml"
+
+  showToc: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+
+  editPost:
+    URL: "https://github.com/Blog/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
