@@ -1,6 +1,6 @@
 ---
 title: 'Find and Execute Package.json Scripts the Easy Way'
-date: 2024-10-02T21:07:37+10:00
+date: 2024-10-02T09:07:37+10:00
 draft: false
 asciinema: true
 tags: 

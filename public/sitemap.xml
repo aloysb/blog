@@ -3,27 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-02T21:07:37+10:00</lastmod>
+    <lastmod>2024-10-05T09:07:37+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/improved-vertical-scrolling-in-neovim/</loc>
+    <lastmod>2024-10-05T09:07:37+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/neovim/</loc>
+    <lastmod>2024-10-05T09:07:37+10:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-10-02T21:07:37+10:00</lastmod>
+    <lastmod>2024-10-05T09:07:37+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-10-05T09:07:37+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cli/</loc>
+    <lastmod>2024-10-02T09:07:37+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/find-and-execute-package-json-scripts/</loc>
+    <lastmod>2024-10-02T09:07:37+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/fzf/</loc>
+    <lastmod>2024-10-02T09:07:37+10:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/jq/</loc>
+    <lastmod>2024-10-02T09:07:37+10:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/bulk-archive-github-repositories/</loc>
     <lastmod>2024-10-01T17:07:37+10:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cli/</loc>
-    <lastmod>2024-10-01T17:07:37+10:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/fzf/</loc>
-    <lastmod>2024-10-01T17:07:37+10:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/gh/</loc>
-    <lastmod>2024-10-01T17:07:37+10:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/jq/</loc>
-    <lastmod>2024-10-01T17:07:37+10:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-10-01T17:07:37+10:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/xargs/</loc>

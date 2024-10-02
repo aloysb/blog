@@ -6,14 +6,24 @@
     <description>Recent content in Fzf on Aloys B.</description>
     <generator>Hugo -- 0.132.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Oct 2024 17:07:37 +1000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Oct 2024 09:07:37 +1000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/fzf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find and Execute Package.json Scripts the Easy Way</title>
+      <link>http://localhost:1313/posts/find-and-execute-package-json-scripts/</link>
+      <pubDate>Wed, 02 Oct 2024 09:07:37 +1000</pubDate>
+      <guid>http://localhost:1313/posts/find-and-execute-package-json-scripts/</guid>
+      <description>How to Quickly Find and Execute Scripts in a Large package.json Sometimes, package.json&amp;rsquo;s scripts section gets very long - especially in a monorepo.
+Fortunately, fzf + jq makes a great combo to quickly find and execute package.json&amp;rsquo;s scripts.
+Prerequisites You will need the following CLI:
+jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL;DR: #!bin/bash # Display the list of npm scripts in a fuzzy finder to execute jq -r &amp;#39;.</description>
+    </item>
     <item>
       <title>Bulk Archive Github Repositories</title>
       <link>http://localhost:1313/posts/bulk-archive-github-repositories/</link>
       <pubDate>Tue, 01 Oct 2024 17:07:37 +1000</pubDate>
       <guid>http://localhost:1313/posts/bulk-archive-github-repositories/</guid>
-      <description>Clean up your Github profile by bulk archiving repos If you have been on Github for more than a few months, you most likely have been accumulating repositories.
+      <description>Clean Up Your GitHub Profile by Bulk Archiving Repos If you have been on github for more than a few months, you most likely have been accumulating repositories.
 While it&amp;rsquo;s great to see your progress, you might not want older, unfinished projects cluttering your profile.
 Instead of deleting them and losing your stats, you can archive them.
 If you are not embarassed of your former self, you are not growing fast enough.</description>

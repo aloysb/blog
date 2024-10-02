@@ -7,10 +7,8 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Find and Execute Package.json Scripts the Easy Way | Aloys B.</title>
 <meta name="keywords" content="cli, fzf, jq">
-<meta name="description" content="How to quickly find and execute scripts in a large package.json Sometimes, package.json&rsquo;s scripts section gets very long.
-Very, very long.
-Especially if you work in a monorepo.
-Once again, fzf &#43; jq makes a great combo to quickly find and execute package.json&rsquo;s scripts.
+<meta name="description" content="How to Quickly Find and Execute Scripts in a Large package.json Sometimes, package.json&rsquo;s scripts section gets very long - especially in a monorepo.
+Fortunately, fzf &#43; jq makes a great combo to quickly find and execute package.json&rsquo;s scripts.
 Prerequisites You will need the following CLI:
 jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL;DR: #!bin/bash # Display the list of npm scripts in a fuzzy finder to execute jq -r &#39;.">
 <meta name="author" content="Aloys">
@@ -117,7 +115,7 @@ jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL
     <h1 class="post-title entry-hint-parent">
       Find and Execute Package.json Scripts the Easy Way
     </h1>
-    <div class="post-meta"><span title='2024-10-01 21:07:37 +1000 AEST'>1 October 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aloys&nbsp;|&nbsp;<a href="https://github.com/Blog/content/posts/find-and-execute-package-json-scripts.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta"><span title='2024-10-02 09:07:37 +1000 AEST'>2 October 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Aloys&nbsp;|&nbsp;<a href="https://github.com/Blog/content/posts/find-and-execute-package-json-scripts.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> <div class="toc">
@@ -128,7 +126,7 @@ jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#how-to-quickly-find-and-execute-scripts-in-a-large-packagejson" aria-label="How to quickly find and execute scripts in a large package.json">How to quickly find and execute scripts in a large package.json</a><ul>
+                    <a href="#how-to-quickly-find-and-execute-scripts-in-a-large-packagejson" aria-label="How to Quickly Find and Execute Scripts in a Large package.json">How to Quickly Find and Execute Scripts in a Large package.json</a><ul>
                         
                 <li>
                     <a href="#prerequisites" aria-label="Prerequisites">Prerequisites</a></li>
@@ -144,11 +142,9 @@ jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL
     </details>
 </div>
 
-  <div class="post-content"><h1 id="how-to-quickly-find-and-execute-scripts-in-a-large-packagejson">How to quickly find and execute scripts in a large package.json<a hidden class="anchor" aria-hidden="true" href="#how-to-quickly-find-and-execute-scripts-in-a-large-packagejson">#</a></h1>
-<p>Sometimes, package.json&rsquo;s scripts section gets very long.</p>
-<p>Very, very long.</p>
-<p>Especially if you work in a monorepo.</p>
-<p>Once again, <code>fzf</code> + <code>jq</code> makes a great combo to quickly find and execute package.json&rsquo;s scripts.</p>
+  <div class="post-content"><h1 id="how-to-quickly-find-and-execute-scripts-in-a-large-packagejson">How to Quickly Find and Execute Scripts in a Large package.json<a hidden class="anchor" aria-hidden="true" href="#how-to-quickly-find-and-execute-scripts-in-a-large-packagejson">#</a></h1>
+<p>Sometimes, package.json&rsquo;s scripts section gets very long - especially in a monorepo.</p>
+<p>Fortunately, <code>fzf</code> + <code>jq</code> makes a great combo to quickly find and execute package.json&rsquo;s scripts.</p>
 <div id='psc'></div>
 <script src="http://localhost:1313//js/asciinema-player.min.js"></script>
 <script>
@@ -183,22 +179,22 @@ jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --header <span style="color:#e6db74">&#34;Select a script to execute&#34;</span> <span style="color:#ae81ff">\
 </span></span></span></code></pre></div><h2 id="step-by-step-explanation">Step by step explanation<a hidden class="anchor" aria-hidden="true" href="#step-by-step-explanation">#</a></h2>
 <ol>
-<li>Retrieve the script names:</li>
+<li>Retrieve the Script Names:</li>
 </ol>
-<p>Using <code>jq</code>, we retrieving all the <code>keys</code> of the <code>scripts</code>.</p>
-<p>The quotes are stripped with the raw flag <code>-r</code></p>
+<p>Using <code>jq</code>, we extract all the <code>keys</code> of the <code>scripts</code>.</p>
+<p>The <code>-r</code> flag ensure quotes are stripped from the result.</p>
 <p><code>jq -r '.scripts | keys[] package.json</code></p>
-<p><em>Note: we assume that the script is execute in directory containing the <code>package.json</code> file.</em></p>
+<p><em>Note: we assume that the script is executed in the directory containing the <code>package.json</code> file.</em></p>
 <ol>
-<li>Pipe the result to <code>fzf</code>:</li>
+<li>Pipe the Result to <code>fzf</code>:</li>
 </ol>
-<p>Then we simply pipe the result to <code>fzf</code>.</p>
-<p>To enhance the UX, we add a header to the search.</p>
+<p>Next, we simply pipe the result to <code>fzf</code>.</p>
+<p>We add a header to enhance the UX.</p>
 <ol>
-<li>Optional) Save the command to a scripts:</li>
+<li>(Optional) Save the Command as a Script:</li>
 </ol>
-<p>In my case, I saved it as <code>psc</code>.</p>
-<p>This allows me to <code>cd</code> into a repository directory and type <code>psc</code></p>
+<p>You can save the command as a script (e.g., <code>psc</code>).</p>
+<p>This way, you can <code>cd</code> into a repository directory and simply type <code>psc</code> to execute the script finder.</p>
 <p>Enjoy,
 Aloys.</p>
 
@@ -212,6 +208,11 @@ Aloys.</p>
       <li><a href="http://localhost:1313/tags/jq/">Jq</a></li>
     </ul>
 <nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/improved-vertical-scrolling-in-neovim/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Improved Vertical Scrolling in Neovim</span>
+  </a>
   <a class="next" href="http://localhost:1313/posts/bulk-archive-github-repositories/">
     <span class="title">Next »</span>
     <br>
