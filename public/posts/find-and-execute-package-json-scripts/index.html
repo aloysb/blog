@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Find and Execute Package.json Scripts the Easy Way | Aloys B.</title>
 <meta name="keywords" content="cli, fzf, jq">
 <meta name="description" content="How to Quickly Find and Execute Scripts in a Large package.json Sometimes, package.json&rsquo;s scripts section gets very long - especially in a monorepo.
@@ -12,16 +12,16 @@ Fortunately, fzf &#43; jq makes a great combo to quickly find and execute packag
 Prerequisites You will need the following CLI:
 jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL;DR: #!bin/bash # Display the list of npm scripts in a fuzzy finder to execute jq -r &#39;.">
 <meta name="author" content="Aloys">
-<link rel="canonical" href="http://localhost:1313/posts/find-and-execute-package-json-scripts/">
+<link rel="canonical" href="https://aloysb.xyz/posts/find-and-execute-package-json-scripts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://aloysb.xyz/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://aloysb.xyz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://aloysb.xyz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://aloysb.xyz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://aloysb.xyz/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/find-and-execute-package-json-scripts/">
+<link rel="alternate" hreflang="en" href="https://aloysb.xyz/posts/find-and-execute-package-json-scripts/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,9 +59,82 @@ jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL
 
     </style>
 </noscript>
-<link rel="stylesheet" type="text/css" href="http://localhost:1313//css/asciinema-player.css" />
+<link rel="stylesheet" type="text/css" href="https://aloysb.xyz//css/asciinema-player.css" />
 
 
+  
+
+<meta property="og:title" content="Find and Execute Package.json Scripts the Easy Way" />
+<meta property="og:description" content="How to Quickly Find and Execute Scripts in a Large package.json Sometimes, package.json&rsquo;s scripts section gets very long - especially in a monorepo.
+Fortunately, fzf &#43; jq makes a great combo to quickly find and execute package.json&rsquo;s scripts.
+Prerequisites You will need the following CLI:
+jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL;DR: #!bin/bash # Display the list of npm scripts in a fuzzy finder to execute jq -r &#39;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aloysb.xyz/posts/find-and-execute-package-json-scripts/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-10-02T09:07:37+10:00" />
+<meta property="article:modified_time" content="2024-10-02T09:07:37+10:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Find and Execute Package.json Scripts the Easy Way"/>
+<meta name="twitter:description" content="How to Quickly Find and Execute Scripts in a Large package.json Sometimes, package.json&rsquo;s scripts section gets very long - especially in a monorepo.
+Fortunately, fzf &#43; jq makes a great combo to quickly find and execute package.json&rsquo;s scripts.
+Prerequisites You will need the following CLI:
+jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL;DR: #!bin/bash # Display the list of npm scripts in a fuzzy finder to execute jq -r &#39;."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://aloysb.xyz/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Find and Execute Package.json Scripts the Easy Way",
+      "item": "https://aloysb.xyz/posts/find-and-execute-package-json-scripts/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Find and Execute Package.json Scripts the Easy Way",
+  "name": "Find and Execute Package.json Scripts the Easy Way",
+  "description": "How to Quickly Find and Execute Scripts in a Large package.json Sometimes, package.json\u0026rsquo;s scripts section gets very long - especially in a monorepo.\nFortunately, fzf + jq makes a great combo to quickly find and execute package.json\u0026rsquo;s scripts.\nPrerequisites You will need the following CLI:\njq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL;DR: #!bin/bash # Display the list of npm scripts in a fuzzy finder to execute jq -r \u0026#39;.",
+  "keywords": [
+    "cli", "fzf", "jq"
+  ],
+  "articleBody": "How to Quickly Find and Execute Scripts in a Large package.json Sometimes, package.json’s scripts section gets very long - especially in a monorepo.\nFortunately, fzf + jq makes a great combo to quickly find and execute package.json’s scripts.\nPrerequisites You will need the following CLI:\njq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL;DR: #!bin/bash # Display the list of npm scripts in a fuzzy finder to execute jq -r '.scripts | keys[]' package.json | fzf \\ --header \"Select a script to execute\" \\ Step by step explanation Retrieve the Script Names: Using jq, we extract all the keys of the scripts.\nThe -r flag ensure quotes are stripped from the result.\njq -r '.scripts | keys[] package.json\nNote: we assume that the script is executed in the directory containing the package.json file.\nPipe the Result to fzf: Next, we simply pipe the result to fzf.\nWe add a header to enhance the UX.\n(Optional) Save the Command as a Script: You can save the command as a script (e.g., psc).\nThis way, you can cd into a repository directory and simply type psc to execute the script finder.\nEnjoy, Aloys.\n",
+  "wordCount" : "197",
+  "inLanguage": "en",
+  "datePublished": "2024-10-02T09:07:37+10:00",
+  "dateModified": "2024-10-02T09:07:37+10:00",
+  "author":{
+    "@type": "Person",
+    "name": "Aloys"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://aloysb.xyz/posts/find-and-execute-package-json-scripts/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aloys B.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://aloysb.xyz/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -79,7 +152,7 @@ jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Aloys B. (Alt + H)">Aloys B.</a>
+            <a href="https://aloysb.xyz/" accesskey="h" title="Aloys B. (Alt + H)">Aloys B.</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -111,7 +184,7 @@ jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://aloysb.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://aloysb.xyz/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Find and Execute Package.json Scripts the Easy Way
     </h1>
@@ -146,7 +219,7 @@ jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL
 <p>Sometimes, package.json&rsquo;s scripts section gets very long - especially in a monorepo.</p>
 <p>Fortunately, <code>fzf</code> + <code>jq</code> makes a great combo to quickly find and execute package.json&rsquo;s scripts.</p>
 <div id='psc'></div>
-<script src="http://localhost:1313//js/asciinema-player.min.js"></script>
+<script src="https://aloysb.xyz//js/asciinema-player.min.js"></script>
 <script>
   AsciinemaPlayer.create('/casts/psc.cast', document.getElementById('psc'), {
         
@@ -203,17 +276,17 @@ Aloys.</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/cli/">Cli</a></li>
-      <li><a href="http://localhost:1313/tags/fzf/">Fzf</a></li>
-      <li><a href="http://localhost:1313/tags/jq/">Jq</a></li>
+      <li><a href="https://aloysb.xyz/tags/cli/">Cli</a></li>
+      <li><a href="https://aloysb.xyz/tags/fzf/">Fzf</a></li>
+      <li><a href="https://aloysb.xyz/tags/jq/">Jq</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/improved-vertical-scrolling-in-neovim/">
+  <a class="prev" href="https://aloysb.xyz/posts/improved-vertical-scrolling-in-neovim/">
     <span class="title">« Prev</span>
     <br>
     <span>Improved Vertical Scrolling in Neovim</span>
   </a>
-  <a class="next" href="http://localhost:1313/posts/bulk-archive-github-repositories/">
+  <a class="next" href="https://aloysb.xyz/posts/bulk-archive-github-repositories/">
     <span class="title">Next »</span>
     <br>
     <span>Bulk Archive Github Repositories</span>
@@ -225,7 +298,7 @@ Aloys.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">Aloys B.</a></span> · 
+        <span>&copy; 2024 <a href="https://aloysb.xyz/">Aloys B.</a></span> · 
 
     <span>
         Powered by

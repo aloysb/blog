@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cli on Aloys B.</title>
-    <link>http://localhost:1313/tags/cli/</link>
+    <link>https://aloysb.xyz/tags/cli/</link>
     <description>Recent content in Cli on Aloys B.</description>
     <generator>Hugo -- 0.132.1</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Oct 2024 09:07:37 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aloysb.xyz/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Find and Execute Package.json Scripts the Easy Way</title>
-      <link>http://localhost:1313/posts/find-and-execute-package-json-scripts/</link>
+      <link>https://aloysb.xyz/posts/find-and-execute-package-json-scripts/</link>
       <pubDate>Wed, 02 Oct 2024 09:07:37 +1000</pubDate>
-      <guid>http://localhost:1313/posts/find-and-execute-package-json-scripts/</guid>
+      <guid>https://aloysb.xyz/posts/find-and-execute-package-json-scripts/</guid>
       <description>How to Quickly Find and Execute Scripts in a Large package.json Sometimes, package.json&amp;rsquo;s scripts section gets very long - especially in a monorepo.
 Fortunately, fzf + jq makes a great combo to quickly find and execute package.json&amp;rsquo;s scripts.
 Prerequisites You will need the following CLI:
@@ -20,9 +20,9 @@ jq: a utility to work with JSON files fzf: a powerful, versatile fuzzy finder TL
     </item>
     <item>
       <title>Bulk Archive Github Repositories</title>
-      <link>http://localhost:1313/posts/bulk-archive-github-repositories/</link>
+      <link>https://aloysb.xyz/posts/bulk-archive-github-repositories/</link>
       <pubDate>Tue, 01 Oct 2024 17:07:37 +1000</pubDate>
-      <guid>http://localhost:1313/posts/bulk-archive-github-repositories/</guid>
+      <guid>https://aloysb.xyz/posts/bulk-archive-github-repositories/</guid>
       <description>Clean Up Your GitHub Profile by Bulk Archiving Repos If you have been on github for more than a few months, you most likely have been accumulating repositories.
 While it&amp;rsquo;s great to see your progress, you might not want older, unfinished projects cluttering your profile.
 Instead of deleting them and losing your stats, you can archive them.

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Neovim on Aloys B.</title>
-    <link>http://localhost:1313/tags/neovim/</link>
+    <link>https://aloysb.xyz/tags/neovim/</link>
     <description>Recent content in Neovim on Aloys B.</description>
     <generator>Hugo -- 0.132.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Oct 2024 09:07:37 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aloysb.xyz/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Improved Vertical Scrolling in Neovim</title>
-      <link>http://localhost:1313/posts/improved-vertical-scrolling-in-neovim/</link>
+      <link>https://aloysb.xyz/posts/improved-vertical-scrolling-in-neovim/</link>
       <pubDate>Sat, 05 Oct 2024 09:07:37 +1000</pubDate>
-      <guid>http://localhost:1313/posts/improved-vertical-scrolling-in-neovim/</guid>
+      <guid>https://aloysb.xyz/posts/improved-vertical-scrolling-in-neovim/</guid>
       <description>Improved Vertical Scrolling in Neovim Neovim is great.
 What I really like about Neovim and similar tools is the fact that you can customize it to fit your workflow, rather than the other way around.
 When reading code in Neovim, I often use Ctrl-U/D to scroll vertically through a file.

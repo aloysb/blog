@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Bulk Archive Github Repositories | Aloys B.</title>
 <meta name="keywords" content="cli, fzf, jq, xargs, gh">
 <meta name="description" content="Clean Up Your GitHub Profile by Bulk Archiving Repos If you have been on github for more than a few months, you most likely have been accumulating repositories.
@@ -12,16 +12,16 @@ While it&rsquo;s great to see your progress, you might not want older, unfinishe
 Instead of deleting them and losing your stats, you can archive them.
 If you are not embarassed of your former self, you are not growing fast enough.">
 <meta name="author" content="Aloys">
-<link rel="canonical" href="http://localhost:1313/posts/bulk-archive-github-repositories/">
+<link rel="canonical" href="https://aloysb.xyz/posts/bulk-archive-github-repositories/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://aloysb.xyz/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://aloysb.xyz/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://aloysb.xyz/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://aloysb.xyz/apple-touch-icon.png">
+<link rel="mask-icon" href="https://aloysb.xyz/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/bulk-archive-github-repositories/">
+<link rel="alternate" hreflang="en" href="https://aloysb.xyz/posts/bulk-archive-github-repositories/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,9 +59,82 @@ If you are not embarassed of your former self, you are not growing fast enough."
 
     </style>
 </noscript>
-<link rel="stylesheet" type="text/css" href="http://localhost:1313//css/asciinema-player.css" />
+<link rel="stylesheet" type="text/css" href="https://aloysb.xyz//css/asciinema-player.css" />
 
 
+  
+
+<meta property="og:title" content="Bulk Archive Github Repositories" />
+<meta property="og:description" content="Clean Up Your GitHub Profile by Bulk Archiving Repos If you have been on github for more than a few months, you most likely have been accumulating repositories.
+While it&rsquo;s great to see your progress, you might not want older, unfinished projects cluttering your profile.
+Instead of deleting them and losing your stats, you can archive them.
+If you are not embarassed of your former self, you are not growing fast enough." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aloysb.xyz/posts/bulk-archive-github-repositories/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-10-01T17:07:37+10:00" />
+<meta property="article:modified_time" content="2024-10-01T17:07:37+10:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bulk Archive Github Repositories"/>
+<meta name="twitter:description" content="Clean Up Your GitHub Profile by Bulk Archiving Repos If you have been on github for more than a few months, you most likely have been accumulating repositories.
+While it&rsquo;s great to see your progress, you might not want older, unfinished projects cluttering your profile.
+Instead of deleting them and losing your stats, you can archive them.
+If you are not embarassed of your former self, you are not growing fast enough."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://aloysb.xyz/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Bulk Archive Github Repositories",
+      "item": "https://aloysb.xyz/posts/bulk-archive-github-repositories/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Bulk Archive Github Repositories",
+  "name": "Bulk Archive Github Repositories",
+  "description": "Clean Up Your GitHub Profile by Bulk Archiving Repos If you have been on github for more than a few months, you most likely have been accumulating repositories.\nWhile it\u0026rsquo;s great to see your progress, you might not want older, unfinished projects cluttering your profile.\nInstead of deleting them and losing your stats, you can archive them.\nIf you are not embarassed of your former self, you are not growing fast enough.",
+  "keywords": [
+    "cli", "fzf", "jq", "xargs", "gh"
+  ],
+  "articleBody": "Clean Up Your GitHub Profile by Bulk Archiving Repos If you have been on github for more than a few months, you most likely have been accumulating repositories.\nWhile it’s great to see your progress, you might not want older, unfinished projects cluttering your profile.\nInstead of deleting them and losing your stats, you can archive them.\nIf you are not embarassed of your former self, you are not growing fast enough.\nPrerequisites What you will need:\ngh: github’s cli tool jq: a very powerful tool for working with json data fzf: a fast, versatile fuzzy finder xargs: a utility for executing commands on the output of other commands These tools are must-haves in your developer’s toolbox for creating efficient workflows.\nSpending some time on their documentations will be save you countless hours down the track.\nTL;DR: gh repo list --visibility public --no-archived --json name |\\ jq -r \".[].name\" |\\ fzf -m --print0 |\\ xargs -0 -i {} gh repo archive -y {} Step By Step Explanation Login in github’s cli: Simply run gh and follow the prompts.\nGet a List of Repositories: Fetch a list of your public repositories that are not archived. use json to output only the names.\ngh repo list --visiblity public --no-archived --json name\nUse jq to Extract the Names in a List: Extract the value of the name for each entry and strip the quotes (-r).\njq -r \".[].name\"\nSelect Repositories with fzf: Pipe the list of names to fzf in multi-select mode (-m), separating the result by the ’null’ value (--print0).\nfzf -m --print0\nArchive Selected Repositories: Finally, pass the selected names to gh repo archive -y via xargs.\nWe skip the confirmation with -y.\nWe inform xargs that the list is separated by the ’null’ character (-0) and use -i to execute the command for each argument in the list.\nComplete Command Putting it all together, the command looks like this:\ngh repo list --visibility public --no-archived --json name |\\ jq -r \".[].name\" |\\ fzf -m --print0 |\\ xargs -0 -i {} gh repo archive -y {} Execution Run the command, use tab to select repositories and press enter to confirm.\nYou should see an output similar to this:\n✓ archived repository abitbetterthanyesterday/angular-todo ✓ archived repository abitbetterthanyesterday/zxb ✓ archived repository abitbetterthanyesterday/c-lisp ✓ archived repository abitbetterthanyesterday/web-dev-course ✓ archived repository abitbetterthanyesterday/zefo ... Enjoy, Aloys ",
+  "wordCount" : "390",
+  "inLanguage": "en",
+  "datePublished": "2024-10-01T17:07:37+10:00",
+  "dateModified": "2024-10-01T17:07:37+10:00",
+  "author":{
+    "@type": "Person",
+    "name": "Aloys"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://aloysb.xyz/posts/bulk-archive-github-repositories/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aloys B.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://aloysb.xyz/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -79,7 +152,7 @@ If you are not embarassed of your former self, you are not growing fast enough."
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Aloys B. (Alt + H)">Aloys B.</a>
+            <a href="https://aloysb.xyz/" accesskey="h" title="Aloys B. (Alt + H)">Aloys B.</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -111,7 +184,7 @@ If you are not embarassed of your former self, you are not growing fast enough."
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://aloysb.xyz/">Home</a>&nbsp;»&nbsp;<a href="https://aloysb.xyz/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Bulk Archive Github Repositories
     </h1>
@@ -154,7 +227,7 @@ If you are not embarassed of your former self, you are not growing fast enough."
 <p>If you are not embarassed of your former self, you are not growing fast enough.</p>
 </blockquote>
 <div id='gh_bulk_archive'></div>
-<script src="http://localhost:1313//js/asciinema-player.min.js"></script>
+<script src="https://aloysb.xyz//js/asciinema-player.min.js"></script>
 <script>
   AsciinemaPlayer.create('/casts/gh_bulk_archive.cast', document.getElementById('gh_bulk_archive'), {
         
@@ -239,14 +312,14 @@ If you are not embarassed of your former self, you are not growing fast enough."
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/cli/">Cli</a></li>
-      <li><a href="http://localhost:1313/tags/fzf/">Fzf</a></li>
-      <li><a href="http://localhost:1313/tags/jq/">Jq</a></li>
-      <li><a href="http://localhost:1313/tags/xargs/">Xargs</a></li>
-      <li><a href="http://localhost:1313/tags/gh/">Gh</a></li>
+      <li><a href="https://aloysb.xyz/tags/cli/">Cli</a></li>
+      <li><a href="https://aloysb.xyz/tags/fzf/">Fzf</a></li>
+      <li><a href="https://aloysb.xyz/tags/jq/">Jq</a></li>
+      <li><a href="https://aloysb.xyz/tags/xargs/">Xargs</a></li>
+      <li><a href="https://aloysb.xyz/tags/gh/">Gh</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/find-and-execute-package-json-scripts/">
+  <a class="prev" href="https://aloysb.xyz/posts/find-and-execute-package-json-scripts/">
     <span class="title">« Prev</span>
     <br>
     <span>Find and Execute Package.json Scripts the Easy Way</span>
@@ -258,7 +331,7 @@ If you are not embarassed of your former self, you are not growing fast enough."
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="http://localhost:1313/">Aloys B.</a></span> · 
+        <span>&copy; 2024 <a href="https://aloysb.xyz/">Aloys B.</a></span> · 
 
     <span>
         Powered by
