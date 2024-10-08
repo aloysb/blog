@@ -45,13 +45,13 @@ The `-r` flag ensure quotes are stripped from the result.
 
 _Note: we assume that the script is executed in the directory containing the `package.json` file._
 
-1. Pipe the Result to `fzf`:
+2. Pipe the Result to `fzf`:
 
 Next, we simply pipe the result to `fzf`.
 
 We add a header to enhance the UX.
 
-1. (Optional) Save the Command as a Script:
+3. (Optional) Save the Command as a Script:
 
 You can save the command as a script (e.g., `psc`). 
 

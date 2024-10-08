@@ -267,22 +267,22 @@ If you are not embarassed of your former self, you are not growing fast enough."
 <li>Login in github&rsquo;s cli:</li>
 </ol>
 <p>Simply run <code>gh</code> and follow the prompts.</p>
-<ol>
+<ol start="2">
 <li>Get a List of Repositories:</li>
 </ol>
 <p>Fetch a list of your public repositories that are not archived. use json to output only the names.</p>
 <p><code>gh repo list --visiblity public --no-archived --json name</code></p>
-<ol>
+<ol start="3">
 <li>Use <code>jq</code> to Extract the Names in a List:</li>
 </ol>
 <p>Extract the value of the name for each entry and strip the quotes (<code>-r</code>).</p>
 <p><code>jq -r &quot;.[].name&quot;</code></p>
-<ol>
+<ol start="4">
 <li>Select Repositories with <code>fzf</code>:</li>
 </ol>
 <p>Pipe the list of names to <code>fzf</code> in multi-select mode (<code>-m</code>), separating the result by the &rsquo;null&rsquo; value (<code>--print0</code>).</p>
 <p><code>fzf -m --print0</code></p>
-<ol>
+<ol start="5">
 <li>Archive Selected Repositories:</li>
 </ol>
 <p>Finally, pass the selected names to <code>gh repo archive -y</code> via <code>xargs</code>.</p>

@@ -6,8 +6,19 @@
     <description>Recent content on Aloys B.</description>
     <generator>Hugo -- 0.132.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Oct 2024 09:07:37 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Oct 2024 17:07:37 +1000</lastBuildDate>
     <atom:link href="https://aloysb.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quickly Open Localhost from Anywhere using Hammerspoon</title>
+      <link>https://aloysb.xyz/posts/quickly-open-localhost-from-anywhere-using-hammerspoon/</link>
+      <pubDate>Tue, 08 Oct 2024 17:07:37 +1000</pubDate>
+      <guid>https://aloysb.xyz/posts/quickly-open-localhost-from-anywhere-using-hammerspoon/</guid>
+      <description>Quickly Open Localhost from Anywhere using Hammerspoon I love to reduce friction in my workflows.
+I find it incredibly useful and pleasant.
+You might not save hours in your day, but you increase your skills and get a hit of satisfaction every time you use [INSERT THE TOOL YOU BUILT HERE].
+It also greatly help you staying in the flow.
+As a developer, you have access to some incredible tools that you can leverage improve your workflows.</description>
+    </item>
     <item>
       <title>Improved Vertical Scrolling in Neovim</title>
       <link>https://aloysb.xyz/posts/improved-vertical-scrolling-in-neovim/</link>

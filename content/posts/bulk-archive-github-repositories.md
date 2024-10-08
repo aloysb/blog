@@ -52,25 +52,25 @@ gh repo list --visibility public --no-archived --json name |\
 
 Simply run `gh` and follow the prompts.
 
-1. Get a List of Repositories:
+2. Get a List of Repositories:
 
 Fetch a list of your public repositories that are not archived. use json to output only the names.
 
 `gh repo list --visiblity public --no-archived --json name` 
 
-1. Use `jq` to Extract the Names in a List:
+3. Use `jq` to Extract the Names in a List:
 
 Extract the value of the name for each entry and strip the quotes (`-r`).
 
 `jq -r ".[].name"`
 
-1. Select Repositories with `fzf`: 
+4. Select Repositories with `fzf`: 
 
 Pipe the list of names to `fzf` in multi-select mode (`-m`), separating the result by the 'null' value (`--print0`).
 
 `fzf -m --print0`
 
-1. Archive Selected Repositories:
+5. Archive Selected Repositories:
 
 Finally, pass the selected names to `gh repo archive -y` via `xargs`.
 

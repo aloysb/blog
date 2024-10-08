@@ -3,18 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://aloysb.xyz/</loc>
-    <lastmod>2024-10-05T09:07:37+10:00</lastmod>
+    <lastmod>2024-10-08T17:07:37+10:00</lastmod>
+  </url><url>
+    <loc>https://aloysb.xyz/tags/hammerspoon/</loc>
+    <lastmod>2024-10-08T17:07:37+10:00</lastmod>
+  </url><url>
+    <loc>https://aloysb.xyz/posts/</loc>
+    <lastmod>2024-10-08T17:07:37+10:00</lastmod>
+  </url><url>
+    <loc>https://aloysb.xyz/posts/quickly-open-localhost-from-anywhere-using-hammerspoon/</loc>
+    <lastmod>2024-10-08T17:07:37+10:00</lastmod>
+  </url><url>
+    <loc>https://aloysb.xyz/tags/</loc>
+    <lastmod>2024-10-08T17:07:37+10:00</lastmod>
   </url><url>
     <loc>https://aloysb.xyz/posts/improved-vertical-scrolling-in-neovim/</loc>
     <lastmod>2024-10-05T09:07:37+10:00</lastmod>
   </url><url>
     <loc>https://aloysb.xyz/tags/neovim/</loc>
-    <lastmod>2024-10-05T09:07:37+10:00</lastmod>
-  </url><url>
-    <loc>https://aloysb.xyz/posts/</loc>
-    <lastmod>2024-10-05T09:07:37+10:00</lastmod>
-  </url><url>
-    <loc>https://aloysb.xyz/tags/</loc>
     <lastmod>2024-10-05T09:07:37+10:00</lastmod>
   </url><url>
     <loc>https://aloysb.xyz/tags/cli/</loc>
